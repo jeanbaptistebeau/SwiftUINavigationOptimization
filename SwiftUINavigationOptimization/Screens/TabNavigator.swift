@@ -22,12 +22,6 @@ struct TabNavigator: View {
 
                 ListScreen()
                     .appTabBarItem(tab: .journal, selection: $currentTab)
-                
-                ListScreen()
-                    .appTabBarItem(tab: .lucidity, selection: $currentTab)
-
-                ListScreen()
-                    .appTabBarItem(tab: .statistics, selection: $currentTab)
             }
             
             if navigator.push == nil {

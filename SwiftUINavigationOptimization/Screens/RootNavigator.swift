@@ -14,7 +14,7 @@ struct RootNavigator: View {
     var body: some View {
         PopupContainer {
             ZStack {
-                Screen(dismiss: {}) { SettingsScreen() }
+                Screen(dismiss: {}) { TabNavigator() }
             }
         }
         .environmentObject(navigator)
